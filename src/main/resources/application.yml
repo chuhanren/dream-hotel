@@ -1,0 +1,35 @@
+#spring.application.name=dream-hotel
+
+server:
+  port: 9192
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dream_hotel_db
+    username: root
+    password: Rch950521*
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+    show-sql: true
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+      file-size-threshold: 2KB
+
+# Logging configuration
+#logging:
+#  level:
+#    root: INFO
+#    com.your.package.name: DEBUG
+#
+## Application specific properties
+#app:
+#  name: Dream Hotel
+#  version: 1.0.0
